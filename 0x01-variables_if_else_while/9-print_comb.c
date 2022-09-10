@@ -8,22 +8,24 @@
 
 int main(void)
 {
-	int ch;
-	int CH;
+	int n;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (n = 0; n < 10; n++)
 	{
+	putchar((n % 10) + '0');
 
-	putchar(ch);
-
+	if (n < 9)
+	{
+	putchar(',');
+	putchar(' ');
 	}
-	for (CH = 'A'; CH <= 'Z'; ch++)
+	}
 
-	putchar(CH);
-
-	{
 	putchar('\n');
+
 	}
-	
+	{
 	return (0);
+	}
 }
+
