@@ -8,23 +8,26 @@
 
 int main(void)
 {
-	int tens;
-	int ones;
+	int hundred, tens, ones;
 
-	for (tens = 0; tens <= 98; tens++)
+	for (hundred = '0'; hundred <= '7'; hundred++)
 	{
-		for (ones = tens + 1; ones <= 99; ones++)
+		for (tens = '1'; tens <= '8'; tens++)
 		{
-			putchar((tens / 10) + '0');
-                        putchar((tens % 10) + '0');
-			putchar(' ');
-			putchar((ones / 10) + '0');
-			putchar((ones % 10) + '0');
-			if (!(tens == 98 && ones == 99))
+			for (ones = '2'; ones <= '9'; ones++)
 			{
-				putchar(',');
-				putchar(' ');
-				
+				if (hundred != tens && hundred != ones && hundred < tens && tens < ones)
+				{
+					putchar(hundred);
+					putchar(tens);
+					putchar(ones);
+					if (!(hundred == '7' && tens == '0' && ones == '9'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+
+				}
 
 			}
 
@@ -34,3 +37,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
