@@ -1,5 +1,5 @@
-#ifndef HOLBERTON_H_INCLUDED
-#define HOLBERTON_H_INCLUDED
+#ifndef MAIN_H
+#define MAIN_H
 
 int _isupper(int c);
 int _isdigit(int c);
@@ -10,7 +10,7 @@ void more_numbers(void);
 void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
-
+int _putchar(char);
 void print_triangle(int size);
 
-#endif
+#endif /* MAIN.H */
