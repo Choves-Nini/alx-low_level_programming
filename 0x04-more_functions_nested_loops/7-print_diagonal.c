@@ -3,7 +3,7 @@
 /**
 * print_diagonal - prints a diagonal
 * @n: parameter
-* Return: 0
+* Return: returns nothing
 */
 
 void print_diagonal(int n)
@@ -19,7 +19,6 @@ void print_diagonal(int n)
 				_putchar(' ');
 			}
 			_putchar('\\');
-		
 			if (len == (n - 1))
 			{
 				continue;
