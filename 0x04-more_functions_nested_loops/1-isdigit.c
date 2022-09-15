@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
-* _isupper - verifying uppercase numbers
+* _isdigit - verifying digits
 * @c: is the int that will be used for the argument in the function
 * Return: 0
 */
 
-int _isupper(int c)
+int _isdigit(int c)
 {
 	if (c >= 0 && c <= 9)
 		return (1);
