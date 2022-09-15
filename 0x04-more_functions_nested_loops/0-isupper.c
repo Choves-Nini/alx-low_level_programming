@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* 0-isupper.c - verifying uppercase numbers
-*
-* Return: 1 if positive and 0 otherwise
+* _isupper - verifying uppercase numbers
+* @c: is the int that will be used for the argument in the function
+* Return: 0
 */
 
 int _isupper(int c)
