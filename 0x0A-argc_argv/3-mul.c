@@ -1,31 +1,25 @@
-#include <ctype.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
- * main - multiplies two numbers
- *
- * @argc: argument counter
- * @argv: argument vector
- *
- * Return: 0 if it works, 1 if there is an ERROR
- */
+  *main - prints the name of the program
+  *@argc: counts the arguments
+  *@argv: lists the arguments
+  *Return: Always 0 for success
+  */
 
 int main(int argc, char *argv[])
 {
-	int n, m, diff;
+	int mul;
 
-	if (argc != 3)
+	if (argc == 3)
 	{
-		printf("Error\n");
-		return (1);
+	mul = atoi(argv[1]) * atoi(argv[2]);
+	printf("%d\n", mul);
 	}
-
-	n = atoi(argv[1]);
-	m = atoi(argv[2]);
-	diff = n * m;
-
-	printf("%i\n", diff);
-
+	else
+	{
+	printf("Error\n");
+	return (1);
+	}
 	return (0);
 }
