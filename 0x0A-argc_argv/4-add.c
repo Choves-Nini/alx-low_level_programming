@@ -15,7 +15,7 @@
 int main(int argc, char *argv[])
 {
 	int c, d;
-	int n = 0;
+	int sum = 0;
 
 	if (argc < 2)
 	{
@@ -33,8 +33,8 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		n += atoi(argv[c]);
+		sum += atoi(argv[c]);
 	}
-	printf("%d\n", n);
+	printf("%d\n", sum);
 	return (0);
 }
